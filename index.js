@@ -9,7 +9,7 @@ dotenv.config();
 db.connect();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173','https://sydney-web-frontend.vercel.app'],
   methods: ['GET', 'POST'],
   credentials: true
 }));
